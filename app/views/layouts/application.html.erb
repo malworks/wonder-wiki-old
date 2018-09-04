@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>WonderWiki</title>
+    <title>Wonder Wiki</title>
     <%= csrf_meta_tags %>
-
+    <%= stylesheet_link_tag "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+	<body>
+		<div class="container2">
+      <section class="header">HEADER</section>
+      <section class="menu">MENU</section>
+      <section class="content">
+        <%= yield %>
+      </section>
+      <section class="footer">FOOTER</section>
+    </div> <!-- end container -->
+  	</body>
 </html>
